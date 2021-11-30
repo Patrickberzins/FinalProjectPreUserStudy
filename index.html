@@ -204,8 +204,8 @@
         "height": 500,
         "mark": { "type": "area", "tooltip": true},
         "encoding": {
-            "x": {"field": "date", "type": "temporal"},
-            "y": {"aggregate": "sum", "field": {"repeat": "layer"}, "type": "quantitative" },
+            "x": {"field": "date", "type": "temporal","title": "Date"},
+            "y": {"aggregate": "sum", "field": {"repeat": "layer"}, "type": "quantitative", "title": "Sum of Carbon Emissions (Tons)" },
             "color": {
             "datum": {"repeat": "layer"},
             "type": "nominal"
@@ -292,7 +292,7 @@
         else if (select == 'Temp'){
             vegaEmbed('#vis_1', Temperature);
             //Clear bottom graphs
-            document.querySelector('#vis_2').innerHTML = 'This is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go!';
+            document.querySelector('#vis_2').innerHTML = 'The trend depicted clearly shows a slight yet highly impactful upward trend in average US tempeartures over the last century. The 2º average increase could mean near catastrophic consquencesfor global currents, coastal cities, wildfires and general environmental trends.';
             document.querySelector('#vis_3').innerHTML = '';
         }
         else if (select == 'State_Temp'){
@@ -300,19 +300,19 @@
             document.querySelector('#vis_1').innerHTML = "<div class='tableauPlaceholder' id='viz1637618209316' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_proj_map&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Final_proj_map&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_proj_map&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>          ";
             var divElement = document.getElementById('viz1637618209316');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
             //Clear bottom graphs
-            document.querySelector('#vis_2').innerHTML = 'This is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go!';
+            document.querySelector('#vis_2').innerHTML = 'Using the slider below the graph, you can observe the gradual rise of temperatures across every state. As you approach the 21st century you can observe each and every state getting more intense as cumulative temperatures continue to rise. While it may seem like a small change in each state, even a couple degrees in temperature increase can have near catastrophic results for climate disasters. ';
             document.querySelector('#vis_3').innerHTML = '';
         }
         else if (select == 'Cost'){
             vegaEmbed('#vis_1', Cost);
             //Clear bottom graphs
-            document.querySelector('#vis_2').innerHTML = 'This is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go!';
+            document.querySelector('#vis_2').innerHTML = 'As global temperatures have risen over the past century, global sea ice levels have decreased rapidly and rising ocean temperatures are causing coastal sea levels to rise. As you can see in the graph adjacent, coastal areas in the United States are at serious risk of costly damage as a result of rising water. In tbe next 100 years, low lying areas are at risk of over 500 billion in property damages (residential alone) in just Florida and New Jersey.';
             document.querySelector('#vis_3').innerHTML = '';
         }
         else if (select == 'Emission_Type'){
             vegaEmbed('#vis_1', Emission_Type);
             //Clear bottom graphs
-            document.querySelector('#vis_2').innerHTML = 'This is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go! his is filler text that I am putting here to show where our brief descriptions will go!';
+            document.querySelector('#vis_2').innerHTML = 'As you can see, Carbon Emissions across all sectors are trending upwards and even despite slight decreases in coal production, gas and oil are both trending upwards to compnsate. Even despite changes in the major causes of Carbon emissions, there is a concerning increase in overall carbon emissions.';
             document.querySelector('#vis_3').innerHTML = '';
         }
         else if (select == 'State'){
