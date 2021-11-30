@@ -18,7 +18,7 @@ body {
     padding-bottom: 30px;
     margin-bottom:20px;
     text-align:center;
-    margin-left:50px;
+    margin-left:80px;
   }
   
   .select_3 li {
@@ -36,8 +36,8 @@ body {
     background-color: green;
     border-color:green;
     border-radius: 0px;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:35px;
+    padding-right:35px;
 
   }
   img{
